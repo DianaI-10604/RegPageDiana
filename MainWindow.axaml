@@ -1,0 +1,114 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="470"
+        x:Class="RegPageDiana.MainWindow"
+        Title="RegPageDiana"
+		Height="470"
+		Width="400"
+		WindowStartupLocation="CenterScreen"
+		Background="Transparent"
+		>
+	
+	<Border CornerRadius="10" Background="#201730">
+		<Grid ShowGridLines="False" RowDefinitions="0.7*, Auto, *"
+								   ColumnDefinitions="*, 340, *">
+			<Border Background="#120b22"
+					Grid.Row="0"
+					Grid.ColumnSpan="3"
+					CornerRadius="10"/>
+			<StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+				<Label Content="Registration Form"
+					   Foreground="White"
+					   FontSize="23"
+					   HorizontalAlignment="Center"/>
+			</StackPanel>
+
+			<StackPanel Grid.Row="1" Grid.Column="1">
+				<TextBox Watermark="First name"
+						 Margin="20"
+						 Background="White"/>
+				<TextBox Watermark="Last name"
+						 Margin="20 0 20 20"
+						 Background="White"/>
+				<TextBox Watermark="Email"
+						 Margin="20 0 20 20"
+						 Background="White"/>
+				<TextBox Watermark="Password"
+						 Margin="20 0 20 20"
+						 Background="White"/>
+
+				<StackPanel Orientation="Horizontal">
+					<Border CornerRadius="5"
+						Background="White"
+						Margin="20 0 0 10"
+						Width="20"
+						Height="20"
+						HorizontalAlignment="Left">
+					</Border>
+
+					<CheckBox Foreground="White"
+							  BorderBrush="White"
+							  Margin="-20 0 0 10"/>
+					<TextBlock Foreground="White"
+						   FontSize="10"
+							   Margin="10 10 10 10">
+						Lorem ipsum dolor  sit amet, consectetuer adipiscing elit, <LineBreak/>
+						sed diam nonummy nibh euismod tincidunt us laoreet <LineBreak/>
+						
+					</TextBlock>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal">
+					<Border CornerRadius="5"
+						Background="White"
+						Margin="20 0 0 5"
+						Width="20"
+						Height="20"
+						HorizontalAlignment="Left">
+					</Border>
+
+					<CheckBox Foreground="White"
+							  BorderBrush="White"
+							  Margin="-20 0 0 5"/>
+					<TextBlock Foreground="White"
+						   FontSize="10"
+							   Margin="10 5 0 0">
+						Diam nonummy nibh euismod tincidunt us laoreet dolore <LineBreak/>
+						magna aliquam erat volutpat. Ut wisi enim<LineBreak/>
+
+					</TextBlock>
+				</StackPanel>
+			</StackPanel>
+
+			<StackPanel Grid.Row="2" Grid.Column="1">
+				<Grid ShowGridLines="False" ColumnDefinitions="*, *">
+					<Button Grid.Row="2"
+							Grid.Column="2"
+							Background="#25b638"
+							Foreground="White"
+							Width="120"
+							Height="35"
+							HorizontalAlignment="Right"
+							Margin="0 20 20 0"
+							CornerRadius="5">
+						<Button.Background>
+							<LinearGradientBrush StartPoint="0, 20"
+												 EndPoint="0, 0">
+								<GradientStop Color="#20812c"/>
+								<GradientStop Color="#25b638"/>
+							</LinearGradientBrush>
+						</Button.Background>
+						<TextBlock Text="Register"
+								   FontSize="17"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"/>
+					</Button>
+					
+				</Grid>
+			</StackPanel>
+		</Grid>
+	</Border>
+
+</Window>
