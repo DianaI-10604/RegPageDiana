@@ -8,8 +8,7 @@
 		Height="470"
 		Width="370"
 		WindowStartupLocation="CenterScreen"
-		Background="Transparent"
-		>
+		Background="Transparent">
 	
 	<Border CornerRadius="10" Background="#1e143e">
 		<Grid ShowGridLines="False" RowDefinitions="0.7*, Auto, *"
@@ -26,16 +25,21 @@
 			</StackPanel>
 
 			<StackPanel Grid.Row="1" Grid.Column="1">
-				<TextBox Watermark="First name"
+				<TextBox Name="FirstName"
+						 Watermark="First name"
 						 Margin="20"
 						 Background="White"/>
-				<TextBox Watermark="Last name"
+				<TextBox Name="LastName"
+						 Watermark="Last name"
 						 Margin="20 0 20 20"
 						 Background="White"/>
-				<TextBox Watermark="Email"
+				<TextBox Name="Email"
+						 Watermark="Email"
 						 Margin="20 0 20 20"
 						 Background="White"/>
-				<TextBox Watermark="Password"
+				<TextBox Name="Password"
+						 PasswordChar="*"
+						 Watermark="Password"
 						 Margin="20 0 20 20"
 						 Background="White"/>
 
@@ -84,7 +88,8 @@
 
 			<StackPanel Grid.Row="2" Grid.Column="1">
 				<Grid ShowGridLines="False" ColumnDefinitions="*, *">
-					<Button Grid.Row="2"
+					<Button Click="Button_Register" 
+							Grid.Row="2"
 							Grid.Column="2"
 							Background="#25b638"
 							Foreground="White"
